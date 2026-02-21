@@ -52,11 +52,11 @@ Storage UI ← State ← BLoC/Cubit ← Either\<Failure, Result\>
 
 ------------------------------------------------------------------------
 
-## Push Notification Topic
+## Note about Push Notifications
 
-The app subscribes to:
-
-all_users
-
-You can broadcast notifications to all users or create additional topics
-for targeting.
+Push notifications were almost fully integrated, however due to a version 
+conflict between the Android Gradle Plugin on my local machine and the 
+flutter_local_notifications package, errors were thrown during the build 
+process. As a result, the push notification feature had to be skipped for 
+now. That said, the codebase is already structured to support it, and it 
+can be enabled easily by resolving the dependency versions.
